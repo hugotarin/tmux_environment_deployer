@@ -1,0 +1,19 @@
+ir al directorio del trabajo
+
+session.name = "Typst Envi"
+
+window1.panels = {
+	window.name = "Editor"
+	| 1 | 2 |
+	=========
+	|   3   |
+}
+
+panel1 = editor del .typ PRINCIPAL
+panel2 = editor del .typ de la PLANTILLA
+panel3 = visor a tiempo real del .typ (typst watch)
+	- tmux resize-pane -t [session]:[window].[panel] -[direccion] [cantidad]
+		direccion: -DownUpLeftRight
+
+window2.name = "Visor"
+visor a tiempo real del .pdf (zathura ex.pdf) 
